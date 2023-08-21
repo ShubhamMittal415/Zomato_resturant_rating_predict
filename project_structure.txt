@@ -1,0 +1,7 @@
+project_folder/
+├── static/
+│   └── style.css
+├── templates/
+│   └── index.html
+├── app.py
+└── model.pkl  # Your trained ML model file
