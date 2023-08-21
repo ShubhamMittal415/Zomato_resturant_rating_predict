@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Rating Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Restaurant Rating Prediction</h1>
+    <form method="POST" action="/">
+        <label for="name">Restaurant Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <!-- Add other input fields here -->
+        <button type="submit">Predict Rating</button>
+    </form>
+    {% if prediction %}
+        <h2>Predicted Rating: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>
